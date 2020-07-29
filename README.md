@@ -1,1 +1,1 @@
-# python_coursera
+This Location contains only assignments that were a part of coursera python programming.
