@@ -42,7 +42,7 @@ def calculator(a,b,op):
             print("Oops! You entered string instead of a number for 2nd input ")
 
 
-#Invoking the function for 3 try's from a user
+#Invoking the function with 3 try's for a user
 i=0
 while i<3:
     #Taking input parameter from the user
