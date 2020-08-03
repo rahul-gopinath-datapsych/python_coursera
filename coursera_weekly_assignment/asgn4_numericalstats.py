@@ -1,5 +1,6 @@
 '''
-Requirement:
+Requirement: Provided the list of numbers. calculate statistics, such as total Sum, total Count of numbers,
+Mean, Duplicate count in the list, smallest and largest number.
 '''
 
 # list of numbers used in testing
