@@ -5,24 +5,6 @@ other than a valid number catch it with a try/except and put out an appropriate 
 Enter 7, 2, bob, 10, and 4 and match the output below
 '''
 
-# total_sum=0
-# count=0
-
-
-# while True:
-#     try:
-#         user_input= input("Enter a number: ")
-#         user_input=float(user_input)
-#         total_sum=total_sum+user_input
-#         count=count+1
-#         avg=total_sum/count   
-#     except:
-#         if user_input.upper()=="DONE":
-#             print(total_sum,count,avg)
-#             quit()
-#         else:
-#             print("Invalid input")
-#             continue
 
 largest_number=None
 smallest_number=None

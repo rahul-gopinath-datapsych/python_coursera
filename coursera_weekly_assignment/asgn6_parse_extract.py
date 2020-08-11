@@ -15,3 +15,5 @@ for i in email_list:
         email_company.append(actual_data.upper())
 
 print("Unique company email accounts are",email_company)
+
+
