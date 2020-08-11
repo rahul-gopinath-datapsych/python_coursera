@@ -9,14 +9,18 @@ When you are testing below enter mbox-short.txt as the file name.
 '''
 import os
 
+#inputing file name from the user
 file_name=input("Please Enter File Name: ")
 
+#Initializig directory location
+dir_path=os.path.dirname(os.path.realpath(__file__))
+file_path =dir_path.replace('\\','/') +'/'+file_name
+
 try:
-    dir_path=os.path.dirname(os.path.realpath(__file__))
-    file_path =dir_path.replace('\\','/') +'/'+file_name
+    #Reading the file
     file_handle=open(file_path,'r')
 except:
-    print("Provided file name",file_path,"is not available in the path")
+    print("Provided file name",file_name,"is not available in the path",dir_path)
     quit()
 
 #initial variable to 0
@@ -24,13 +28,17 @@ count=0
 total_value=0
 
 for line in file_handle:
+    #Checking if line exist
     if line.startswith("X-DSPAM-Confidence:"):
+        #Slicing for the numeric value
         count=count+1
         line=line.strip()
         position1=line.find(":")
         input_param=line[position1+1:]
+        #Converting and adding numeric variable
         total_value=total_value+float(input_param)
 
+#Calculating Average
 mean=total_value/count
 print("Average Spam confidence:",mean)
 
