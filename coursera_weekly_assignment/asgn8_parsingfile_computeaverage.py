@@ -14,7 +14,7 @@ file_name=input("Please Enter File Name: ")
 
 #Initializig directory location
 dir_path=os.path.dirname(os.path.realpath(__file__))
-file_path =dir_path.replace('\\','/') +'/'+file_name
+file_path =dir_path.replace('\\','/') +'/input_files/'+file_name
 
 try:
     #Reading the file
