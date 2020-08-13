@@ -14,7 +14,7 @@ file_name=input("Please Enter File Name: ")
 dir_path=os.path.dirname(os.path.realpath(__file__))
 dir_path=dir_path.replace("\\",'/')
 #file_name="romeo.txt"
-input_filename=dir_path+'/'+file_name
+input_filename=dir_path+'/input_files/'+file_name
 
 try:
     #Reading the file

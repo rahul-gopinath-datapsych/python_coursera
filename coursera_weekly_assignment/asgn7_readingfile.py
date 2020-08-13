@@ -9,7 +9,7 @@ file_name=input("Please Enter File Name: ")
 
 try:
     dir_path=os.path.dirname(os.path.realpath(__file__))
-    file_path =dir_path.replace('\\','/') +'/'+file_name
+    file_path =dir_path.replace('\\','/') +'/input_files/'+file_name
     file_handle=open(file_path,'r')
 except:
     print("Provided file name",file_name,"is not available in the path")

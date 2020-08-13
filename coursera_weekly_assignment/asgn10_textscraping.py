@@ -14,13 +14,13 @@ import os
 dir_path=os.path.dirname(os.path.realpath(__file__))
 dir_path=dir_path.replace("\\",'/')
 file_name="mbox-short.txt"
-input_filename=dir_path+'/'+file_name
+input_filename=dir_path+'/input_files/'+file_name
 
 try:
     #Reading the file
     fhandler=open(input_filename,'r')
 except:
-    print("Provided file name",file_name,"is not available in the path",dir_path)
+    print("Provided file name",file_name,"is not available in the path",input_filename)
     quit()
 
 #initial variable and empty list
