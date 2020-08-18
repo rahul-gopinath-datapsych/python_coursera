@@ -12,7 +12,7 @@ file_name="mbox-short.txt"
 input_filename=dir_path+'/input_files/'+file_name
 
 try:
-    #Reading the file
+    #Reading input file 
     fhandler=open(input_filename,'r')
 except:
     print("Provided file name",file_name,"is not available in the path",dir_path)
