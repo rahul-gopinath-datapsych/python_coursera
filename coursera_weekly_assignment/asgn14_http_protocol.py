@@ -6,7 +6,7 @@ cmd = 'GET http://data.pr4e.org/intro-short.txt HTTP/1.0\r\n\r\n'.encode()
 mysock.send(cmd)
 
 while True:
-    data = mysock.recv(521)
+    data = mysock.recv(10)
     if len(data) < 1:
         break
     print(data.decode(),end='')
