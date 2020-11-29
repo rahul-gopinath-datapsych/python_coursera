@@ -2,10 +2,13 @@ from urllib import request , error , parse
 from bs4 import BeautifulSoup
 import ssl
 
-url_link = "http://py4e-data.dr-chuck.net/known_by_Lily.html"
+#Sample URL : http://py4e-data.dr-chuck.net/known_by_Lily.html
 
-total_process = 7
-final_pst = 18
+#getting input from users
+url_link = input("Enter URL: ")
+total_process = int(input("Enter total process count: "))
+final_pst = int(input("Enter total loop per count: "))
+
 
 for i in range( 0 , total_process):
     data = request.urlopen( url_link).read()
