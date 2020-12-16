@@ -18,9 +18,8 @@ param['address'] = address
 
 url_details = service_url + parse.urlencode(param)
 
-request_data = request.urlopen(url_details)
-revised_data = request_data.read().decode()
+request_data = request.urlopen(url_details).read().decode()
 
-data = json.loads(revised_data)
+data = json.loads(request_data)
 
 print('Place Id: ' , data['results'][0]['place_id'])
