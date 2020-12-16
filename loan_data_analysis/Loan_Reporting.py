@@ -202,10 +202,6 @@ except:
 
 
 
-import matplotlib.pyplot as plt
-import seaborn as sns
-import matplotlib as mp
-
 # a= plt.figure()
 # axes= a.add_axes([0.1,0.1,0.8,0.8])
 # # adding axes
@@ -231,10 +227,6 @@ plt.tight_layout()
 #===============================================
 
 # 2nd version plot
-import matplotlib.pyplot as plt
-import seaborn as sns
-import matplotlib as mp
-
 # a= plt.figure()
 # axes= a.add_axes([0.1,0.1,0.8,0.8])
 # # adding axes
